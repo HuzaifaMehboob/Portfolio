@@ -49,6 +49,8 @@ function Contact() {
     // }
   };
 
+ 
+
   return (
     <div id="contact">
       <div className="items-container">
@@ -114,3 +116,5 @@ function Contact() {
 }
 
 export default Contact;
+
+

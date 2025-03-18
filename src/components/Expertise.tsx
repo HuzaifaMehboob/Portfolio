@@ -1,7 +1,7 @@
 import React from "react";
-import '@fortawesome/free-regular-svg-icons'
+import '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faReact, faDocker, faPython } from '@fortawesome/free-brands-svg-icons';
+import { faReact, faDocker, faPython, faFigma } from '@fortawesome/free-brands-svg-icons';
 import Chip from '@mui/material/Chip';
 import '../assets/styles/Expertise.scss';
 
@@ -20,15 +20,15 @@ const labelsFirst = [
 ];
 
 const labelsSecond = [
-    "Git",
-    "GitHub Actions",
-    "Docker",
-    "AWS",
-    "Azure",
-    "Linux",
-    "Snowflake",
-    "Pandas",
-    "Selenium",
+    "Figma",
+    "Adobe XD",
+    "UI/UX",
+    "Wireframing",
+    "Prototyping",
+    "Responsive Design",
+    "Design Systems",
+    "Tailwind CSS",
+    "Material UI",
 ];
 
 const labelsThird = [
@@ -39,6 +39,9 @@ const labelsThird = [
     "Hugging Face",
     "LlamaIndex",
     "Streamlit",
+    "NLP",
+    "Conversational AI",
+    "Vector Databases",
 ];
 
 function Expertise() {
@@ -60,9 +63,9 @@ function Expertise() {
                 </div>
 
                 <div className="skill">
-                    <FontAwesomeIcon icon={faDocker} size="3x"/>
-                    <h3>DevOps & Automation</h3>
-                    <p>Once the application is built, I help clients set up DevOps testing, CI/CD pipelines, and deployment automation to support the successful Go-Live.</p>
+                    <FontAwesomeIcon icon={faFigma} size="3x"/>
+                    <h3>UI/UX & Web Design</h3>
+                    <p>I specialize in crafting intuitive and visually appealing user interfaces. From wireframing and prototyping to fully responsive web designs, I ensure a seamless and engaging user experience.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsSecond.map((label, index) => (
@@ -73,8 +76,8 @@ function Expertise() {
 
                 <div className="skill">
                     <FontAwesomeIcon icon={faPython} size="3x"/>
-                    <h3>GenAI & LLM</h3>
-                    <p>Stay relevant in the market by leveraging the latest AI models in your projects. I have professional experience building enterprise grade GenAI-enabled solutions to empower intelligent decision making.</p>
+                    <h3>GenAI & LLM Applications</h3>
+                    <p>I develop AI-powered chatbots and NLP applications that help businesses automate insights, interact with data, and improve decision-making. My expertise lies in leveraging LLMs to process and generate human-like responses for various domains.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsThird.map((label, index) => (

@@ -4,7 +4,11 @@
     padding: 5% 10%;
     text-align: left;
 }
-  
+.projects-container h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
 .projects-container .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -14,12 +18,25 @@
 .projects-container .projects-grid .project {
     text-align: left;
 }
-  
+.project h2{
+    font-size:1.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
 .project h2:hover {
     text-decoration: underline;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
 }
-  
+
+/* Ensure images have the same height */
+.project img {
+    width: 100%; /* Full width of container */
+    height: 400px; /* Fixed height */
+    object-fit: cover; /* Ensures the image scales properly without distortion */
+    border-radius: 5px;
+}
+
 .zoom {
     border-radius: 5px;
     transition: transform .2s;
@@ -30,20 +47,18 @@
     transform: scale(1.05);
 }
 
-@media screen {
-    @media (max-width: 700px) {
-        .projects-container {
-            display: block;
-            padding-left: 5%;
-            padding-right: 5%;
-        }
-  
-        .projects-container .projects-grid {
-            display: block;
-        }
-      
-        .projects-container .projects-grid .project {
-            padding-bottom: 5%;
-        }
+@media screen and (max-width: 700px) {
+    .projects-container {
+        display: block;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .projects-container .projects-grid {
+        display: block;
+    }
+
+    .projects-container .projects-grid .project {
+        padding-bottom: 5%;
     }
 }
